@@ -1,0 +1,36 @@
+{
+  "agent_name": "FLAIR Product Import Manager",
+  "vendor": "FLAIR",
+  "data_source": "/mnt/z_drive/Danny Flair/product_data/",
+  "website": "https://flairshowers.com/",
+  "odoo_module": "bloom_tiles_25",
+  "product_categories": [
+    "Shower Enclosures",
+    "Shower Doors",
+    "Quadrant Enclosures",
+    "Bifold Doors",
+    "Sliding Doors",
+    "Pivot Doors",
+    "Hinge Doors"
+  ],
+  "mcp_servers": {
+    "odoo": {
+      "enabled": true,
+      "purpose": "Product creation and management"
+    },
+    "github": {
+      "enabled": true,
+      "purpose": "Issue tracking and progress reporting"
+    },
+    "puppeteer": {
+      "enabled": true,
+      "purpose": "Additional web scraping if needed"
+    }
+  },
+  "import_settings": {
+    "batch_size": 10,
+    "image_import": true,
+    "create_variants": true,
+    "default_currency": "USD"
+  }
+}
